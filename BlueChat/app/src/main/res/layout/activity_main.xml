@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50sp"
+                android:background="@mipmap/name" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="50sp"
+                android:text="IP:"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/client_ip"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="4.5"
+                android:background="@null"
+                android:hint="请输入IP"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50sp"
+                android:background="@mipmap/password"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="50sp"
+                android:text="Port:"
+                android:textSize="25dp"/>
+            <EditText
+                android:id="@+id/client_port"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_weight="4.5"
+                android:hint="请输入端口"
+                android:maxLines="1"
+                android:textCursorDrawable="@null"
+                android:layout_height="50sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/name_"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50sp"
+                android:background="@mipmap/name_" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="50sp"
+                android:text="name:"
+                android:textSize="25dp"/>
+            <EditText
+                android:id="@+id/client_name"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:hint="请设置用户名"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textCursorDrawable="@null"
+                android:layout_weight="4.5"
+                android:layout_height="50sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_land"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/signup"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
